@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+read varnumber
+while [ $varnumber -gt 0 ]
+do
+
+     let B=$varnumber%8
+    let  varnumber=$varnumber/8
+     Binary=$B$Binary
+done
+echo $Binary
